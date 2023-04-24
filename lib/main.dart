@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animations/rotate_and_flip_chained_animation_page.dart';
-import 'package:flutter_animations/rotating_container_page.dart';
+import 'package:flutter_animations/animated_prompt_page.dart';
 
 void main() => runApp(const App());
 
@@ -9,8 +8,12 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: RotateAndFlipChainedAnimationPage(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(brightness: Brightness.light),
+      darkTheme: ThemeData(brightness: Brightness.dark),
+      themeMode: ThemeMode.dark,
+      home: const AnimatedPromptPage(),
     );
   }
 }

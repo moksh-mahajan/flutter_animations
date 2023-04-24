@@ -1,6 +1,5 @@
 import 'dart:math' show pi;
 import 'package:flutter/material.dart';
-import 'package:vector_math/vector_math_64.dart' show Vector3;
 
 class RotatingContainerPage extends StatelessWidget {
   const RotatingContainerPage({super.key});
@@ -18,7 +17,7 @@ class RotatingContainerPage extends StatelessWidget {
 }
 
 class _RotatingContainer extends StatefulWidget {
-  const _RotatingContainer({super.key});
+  const _RotatingContainer();
 
   @override
   State<_RotatingContainer> createState() => _RotatingContainerState();

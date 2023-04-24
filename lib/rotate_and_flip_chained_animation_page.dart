@@ -19,7 +19,7 @@ class RotateAndFlipChainedAnimationPage extends StatelessWidget {
 }
 
 class _RotatingCircle extends StatefulWidget {
-  const _RotatingCircle({super.key});
+  const _RotatingCircle();
 
   @override
   State<_RotatingCircle> createState() => _RotatingCircleState();
